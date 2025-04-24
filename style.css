@@ -38,6 +38,7 @@ header {
 h1 {
   font-size: 2.5em;
   color: var(--accent);
+  transition: 0.3s ease-in-out;
 }
 
 .subtitle {
@@ -62,14 +63,14 @@ section p {
   margin: 5px 0;
 }
 
-.theme-toggle {
+.controls {
   text-align: right;
   max-width: 800px;
   margin: auto;
   padding-bottom: 10px;
 }
 
-.theme-toggle button {
+.controls button {
   background: var(--accent);
   color: white;
   border: none;
@@ -77,10 +78,14 @@ section p {
   margin-left: 5px;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s;
+}
+.controls button:hover {
+  background: #005fa3;
 }
 
 @media print {
-  .theme-toggle {
+  .controls {
     display: none;
   }
 }
