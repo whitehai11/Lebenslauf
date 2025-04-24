@@ -1,0 +1,86 @@
+:root {
+  --bg: #f4f4f4;
+  --text: #333;
+  --accent: #007ACC;
+  --card-bg: #fff;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eee;
+  --accent: #90cdf4;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 40px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: var(--accent);
+}
+
+.subtitle {
+  font-size: 1em;
+  color: #888;
+}
+
+h2 {
+  font-size: 1.5em;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: disc inside;
+  margin-left: 10px;
+}
+
+section p {
+  margin: 5px 0;
+}
+
+.theme-toggle {
+  text-align: right;
+  max-width: 800px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.theme-toggle button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media print {
+  .theme-toggle {
+    display: none;
+  }
+}
