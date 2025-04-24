@@ -4,27 +4,29 @@
   <meta charset="UTF-8">
   <title>Lebenslauf – Maro Schüler</title>
   <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script defer src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body>
-  <div class="theme-toggle">
+  <div class="controls">
     <button id="toggleTheme">🌞 / 🌙</button>
-    <button onclick="window.print()">📄 Als PDF speichern</button>
+    <button id="downloadPDF">📄 Lebenslauf speichern</button>
   </div>
 
   <div class="container">
-    <header>
+    <header data-aos="fade-down">
       <h1>Maro Schüler</h1>
       <p class="subtitle">Tech-Enthusiast | Schüler | Nachwuchs-Dev</p>
     </header>
 
-    <section>
+    <section data-aos="fade-up" data-aos-delay="100">
       <h2>Kontakt</h2>
       <p>Email: maro@example.com</p>
       <p>Ort: Bonndorf</p>
     </section>
 
-    <section>
+    <section data-aos="fade-up" data-aos-delay="200">
       <h2>IT-Kenntnisse</h2>
       <ul>
         <li>Python, C++, JavaScript, HTML, CSS</li>
@@ -34,7 +36,7 @@
       </ul>
     </section>
 
-    <section>
+    <section data-aos="fade-up" data-aos-delay="300">
       <h2>Soft Skills</h2>
       <ul>
         <li>Zielstrebigkeit</li>
@@ -44,10 +46,10 @@
       </ul>
     </section>
 
-    <section>
+    <section data-aos="fade-up" data-aos-delay="400">
       <h2>Schule & Projekte</h2>
       <p><strong>Schüler</strong> am Gymnasium, Schwerpunkt Technik & Informatik</p>
-      <p>Freie Projekte: Minecraft-Dashboard, Discord-Bot</p>
+      <p>Freie Projekte: Minecraft-Dashboard, Linux-Betriebssystem, Discord-Bot</p>
     </section>
   </div>
 </body>
